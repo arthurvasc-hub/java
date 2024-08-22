@@ -2,28 +2,19 @@ package edu.arthur.Operadores;
 
 public class Operadores {
     public static void main(String[] args) {
-     int a, b, c ;
-    String nomeUm = "Arthur";
-    String nomeDois = new String("Arthur");
+        boolean ADM = true;
+        boolean USER = false;
 
-    System.out.println(nomeUm.equals(nomeDois));
-
-
-    a = 6;
-    b = 1;
-    c = 6;
-    boolean simNao = b == a;
-    System.out.println("Numero 1 é igual ao numero 2?: " + simNao);
-    simNao = c > a;
-    System.out.println("Numero 1 é maior que o numero 2?: " + simNao);
-    simNao = a == c;
-    System.out.println("Numero 1 é igual numero 2?: " + simNao);
-    simNao = a != c;
-    System.out.println("Numero 1 é diferente do numero 2?: " + simNao);
-
-    String resultado = ((c * b) == a) ? "Verdadeiro" : "Falso";
-        System.out.println("c * b é igual a 6?: " + resultado);
-    }
+        if(ADM && USER){
+             System.out.println("Os dois estão liberados");
+        }
+        if(ADM || USER){
+            System.out.println("O ADM está liberado");
+       }
+       if(!ADM || !USER){
+        System.out.println("O Hacker (false) foi barrado");
+       }
     
    
+}
 }
