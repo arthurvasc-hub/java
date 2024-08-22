@@ -3,6 +3,12 @@ package edu.arthur.Operadores;
 public class Operadores {
     public static void main(String[] args) {
      int a, b, c ;
+    String nomeUm = "Arthur";
+    String nomeDois = new String("Arthur");
+
+    System.out.println(nomeUm.equals(nomeDois));
+
+
     a = 6;
     b = 1;
     c = 6;
