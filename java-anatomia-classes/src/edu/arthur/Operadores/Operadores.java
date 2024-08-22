@@ -3,32 +3,30 @@ package edu.arthur.Operadores;
 public class Operadores {
     public static void main(String[] args) {
      
-    int [] lista = {10, 26, 40, 70 ,100, 200, 500};
+    int [] lista = {10, 26, 40, 70 ,100, 200, 500, 650, 721, 723, 910, 1000, 1010, 1023, 1027, 1080, 1999, 2010, 2024, 2027};
 
-    int findNumber = binarySearch(lista, 100);
+    String findNumber = binarySearch(lista, 10);
     System.out.println(findNumber);
+    System.out.println();
 
     }
-    public static int binarySearch(int[] array, int item) {
+    public static String binarySearch(int[] array, int item) {
         int left = 0;
         int right = array.length -1; 
-        int count = 0;
 
          while (left <= right) {
         int middle = (left + right) / 2;
             if(array[middle] == item ){
-                count++;
-                return item + "nu" count;
+                String result = item + " Posição do item: " + middle;
+                return result;
             }
             if(array[middle] < item){
-                count++;
                 left = middle + 1; 
             } else {
-                count++;
                 right = middle -1;
             }
          } 
-    return -1; 
+    return "false"; 
     }     
    
 }
