@@ -4,7 +4,7 @@ public class PesquisaBinaria {
     public static void main (String[] args) {
         int [] lista = {10, 26, 40, 70 ,100, 200, 500, 650, 721, 723, 910, 1000, 1010, 1023, 1027, 1080, 1999, 2010, 2024, 2027};
 
-        String findNumber = binarySearch(lista, 2027);
+        String findNumber = binarySearch(lista, 500);
         System.out.println(findNumber);
         System.out.println();
     }
@@ -16,7 +16,7 @@ public class PesquisaBinaria {
          while (left <= right) {
         int middle = (left + right) / 2;
             if(array[middle] == item ){
-                String result = item + " Posição do item: " + middle + " Quantidade de tentativas: " + count;
+                String result = "Item encontrado: " + item + " /" + " Posição do item: " + middle + " /" + " Quantidade de tentativas: " + count;
                 return result;
             }
 
