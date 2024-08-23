@@ -1,4 +1,4 @@
-package edu.arthur.anatomia;
+package edu.arthur.Anatomia;
 public class MinhaClasse {
     
 public static void main(String[] args) {

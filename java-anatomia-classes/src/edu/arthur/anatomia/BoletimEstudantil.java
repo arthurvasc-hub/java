@@ -1,4 +1,4 @@
-package edu.arthur.anatomia;
+package edu.arthur.Anatomia;
 public class BoletimEstudantil {
     public static void main(String[] args) {
         int medialFinal = 5;
