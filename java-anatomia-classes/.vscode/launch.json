@@ -1,0 +1,90 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BoletimEstudantil",
+            "request": "launch",
+            "mainClass": "edu.arthur.Anatomia.BoletimEstudantil",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "MinhaClasse",
+            "request": "launch",
+            "mainClass": "edu.arthur.Anatomia.MinhaClasse",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "Escopo",
+            "request": "launch",
+            "mainClass": "edu.arthur.Escopo.Escopo",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "Usuario",
+            "request": "launch",
+            "mainClass": "edu.arthur.Metodos.Usuario",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "Operadores",
+            "request": "launch",
+            "mainClass": "edu.arthur.Operadores.Operadores",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "PesquisaBinaria",
+            "request": "launch",
+            "mainClass": "edu.arthur.PesquisaBinaria.PesquisaBinaria",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "Comentarios",
+            "request": "launch",
+            "mainClass": "edu.arthur.Tags.Comentarios",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "Argumentos",
+            "request": "launch",
+            "mainClass": "edu.arthur.TerminalArgumentos.Argumentos",
+            "projectName": "java-anatomia-classes_8d97737b",
+            "args": [
+                "ARTHUR",
+                "VASCONCELOS",
+                "25",
+                "1.83"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Terminal",
+            "request": "launch",
+            "mainClass": "edu.arthur.TerminalArgumentos.Terminal",
+            "projectName": "java-anatomia-classes_8d97737b"
+        },
+        {
+            "type": "java",
+            "name": "TiposVariaveis",
+            "request": "launch",
+            "mainClass": "edu.arthur.Tipos_e_Variaveis.TiposVariaveis",
+            "projectName": "java-anatomia-classes_8d97737b"
+        }
+    ]
+}
