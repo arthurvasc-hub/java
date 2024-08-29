@@ -7,9 +7,7 @@ public class ContaTerminal {
         //Exibir as mensagens para o nosso usuário
         //Obeter pela classe scanner os valores digitados no terminal
         //Exibir a mensagem conta criada.
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
-
-
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US); // .useLocale(Locale.US); permite que eu use "." para tipos doubles.
 
 
         System.out.println("Por favor, digite o seu nome!");
@@ -22,13 +20,5 @@ public class ContaTerminal {
             double saldo = scanner.nextDouble();
         
         System.out.println("Olá "+ nomeCliente+ ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numeroConta + " e seu saldo R$"+ saldo + " já está disponível para saque.");
-
-        
-
-        
-        
-
-
-
     }
 }
