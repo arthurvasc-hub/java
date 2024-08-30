@@ -1,6 +1,6 @@
 package edu.arthur.estruturas;
 
-public class ForArrays {
+public class ExemploForArrays {
 public static void main(String[] args) {
     String [] alunos = { "FELIPE", "ARTHUR", "DAMZIK", "JHONNY", "PEDRÃO"};
         for(int x = 0; x < alunos.length; x++){
