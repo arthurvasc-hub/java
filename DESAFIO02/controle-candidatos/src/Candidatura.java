@@ -1,17 +1,31 @@
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.Locale;
+import java.util.ArrayList;
 
 
 public class Candidatura {
     public static void main(String[] args) throws Exception {
-        selecaoCandidato();
+        imprimirCandidatos();
+    }
+
+    static void imprimirCandidatos(){
+        String[] candidatos = {"ANA", "EVA", "HELENA", "JULIA", "LEONARDO"};
+        for(int i = 0; i < candidatos.length; i++){
+            System.out.println("O candidato(a) de nº " + i + " foi o(a): " + candidatos[i]);
+        }
+
+        for(String candidato: candidatos){
+            System.out.println("O candidato(a) " + candidato + " foi aprovado no nosso processo seletivo!");
+        }
+
     }
 
     static void selecaoCandidato(){
         String [] candidatos = {"ANA", "BRUNO", "CARLA", "DANIEL", "EVA", "FERNANDO", "GABRIEL", "HELENA", "IGOR", "JULIA", "KARLA", "LEONARDO", "MARIA", "NATALIA", "OLGA", "PAULO", "QUITERIA", "RAFAEL", "SANDRA", "TIAGO"}; 
         int candidatoAtual = 0;
         int candidatosSelecionados = 0;
+        ArrayList<String> nomesSelecionados = new ArrayList<>();
         double salarioOferecido = 2000.0;
 
         while (candidatosSelecionados < 5 && candidatoAtual < candidatos.length) {
@@ -21,9 +35,11 @@ public class Candidatura {
             if(salarioOferecido >= salarioPretendido){
                 System.out.println("E garantiu a vaga na empresa :)! ");
                 candidatosSelecionados++;
+                nomesSelecionados.add(candidato);
             }
             candidatoAtual++;
         }
+        System.out.println("Esses foram os selecionados no nosso processo de seleção: " + nomesSelecionados);
     }
 
     static double valorPretendido() {
