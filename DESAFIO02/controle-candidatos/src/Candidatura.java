@@ -1,13 +1,48 @@
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.Locale;
+import java.util.Random;
 import java.util.ArrayList;
 
 
 public class Candidatura {
     public static void main(String[] args) throws Exception {
-        imprimirCandidatos();
+        String[] candidatos = {"ANA", "EVA", "HELENA", "JULIA", "LEONARDO"};
+        for(String candidato: candidatos){
+        entrandoEmContato(candidato);
+        }
     }
+
+    static void entrandoEmContato(String candidato){
+        int tentativasRealizadas = 1;
+        boolean continuarTentando = true;
+        boolean atendeu = false;
+
+        do {
+            atendeu = atender();
+            continuarTentando = !atendeu;
+            if(continuarTentando)
+                tentativasRealizadas++;
+            else 
+                System.out.println("Contato realizado com sucesso!");
+        } while (continuarTentando && tentativasRealizadas < 3); {
+            if(atendeu)
+                System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " APÓS REALIZAR " + tentativasRealizadas + " TENTATIVAS");
+            else
+                System.out.println("NÃO CONSEGUIMOS REALIZAR O CONTATO COM O " + candidato + " APÓS REALIZAR " + tentativasRealizadas + " TENTATIVAS.");
+        }
+    }
+
+
+    //Método auxiliar
+    static boolean atender(){
+        return new Random().nextInt(3)==1;
+    }
+
+
+
+
+
 
     static void imprimirCandidatos(){
         String[] candidatos = {"ANA", "EVA", "HELENA", "JULIA", "LEONARDO"};
