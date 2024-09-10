@@ -1,3 +1,4 @@
+package edu.arthur.school.model;
 public class School {
     public static void main(String[] args) throws Exception {
         Student student1 = new Student();
