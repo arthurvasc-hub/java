@@ -1,21 +1,29 @@
 package edu.arthur.pilares;
 
+import edu.arthur.pilares.Apps.Facebook;
+import edu.arthur.pilares.Apps.MsnMessenger;
+import edu.arthur.pilares.Apps.Telegram;
+
 public class Usuario {
     public static void main(String[] args) {
-        MsnMessenger msn = new MsnMessenger();
-        System.out.println("MSN");
-        msn.enviarMensagem();
-        msn.receberMensagem();
+        ServicoDeMensagemInstantanea smi = null;
+            /* 
+             NÃO SE SABE QUAL APP 
+             MAS QUALQUER UM DEVERA ENVIAR E RECEBER MENSAGEM
+             */
 
-        Facebook fcb = new Facebook();
-        System.out.println("FACEBOOK");
-        fcb.enviarMensagem();
-        fcb.receberMensagem();
+        String appEscolhido = "fcb";
 
-        System.out.println("TELEGRAM");
-        Telegram tlg = new Telegram();
-        tlg.enviarMensagem();
-        tlg.receberMensagem();
+        if(appEscolhido.equals("msn"))
+            smi = new MsnMessenger();
+        else if(appEscolhido.equals("tlg"))
+            smi = new Telegram();
+        else if(appEscolhido.equals("fcb"))
+            smi = new Facebook();
+
+        smi.enviarMensagem();
+        smi.receberMensagem();
+        smi.salvarHistorico();
     }
     
     
