@@ -1,3 +1,4 @@
+package ListaTarefas;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +9,7 @@ public class ListaTarefa {
         this.listaDeTarefas = new ArrayList<>();
     }
 
-    public List<Tarefa> get(){
+    public List<Tarefa> getListaDeTarefas(){
         return listaDeTarefas;
     }
 
