@@ -1,4 +1,4 @@
-package ListaTarefas;
+package edu.arthur.ListaTarefas;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,3 +37,8 @@ public class ListaTarefa {
             System.out.println(listaDeTarefas);
     }
 }
+
+
+
+
+

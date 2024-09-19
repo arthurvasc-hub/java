@@ -1,4 +1,4 @@
-package CarrinhoCompras;
+package edu.arthur.CarrinhoCompras;
 
 public class App {
     public static void main(String[] args) {
