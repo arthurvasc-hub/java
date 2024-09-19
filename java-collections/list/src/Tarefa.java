@@ -9,6 +9,10 @@ public class Tarefa {
     public String getDescricao() {
         return descricao;
     }
+
+     public String toString() {
+        return descricao;
+    }
     
 
 

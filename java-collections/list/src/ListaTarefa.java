@@ -23,8 +23,8 @@ public class ListaTarefa {
                 if(t.getDescricao().equalsIgnoreCase(descricao)) {
                     listaRemoverTarefas.add(t);
                 }
-        listaDeTarefas.removeAll(listaRemoverTarefas);
             }
+            listaDeTarefas.removeAll(listaRemoverTarefas);
     }
 
     public int obterNumeroTotalTarefas(){
@@ -32,6 +32,7 @@ public class ListaTarefa {
     }
 
     public void obterDescricaoTarefas(){
-        System.out.println(listaDeTarefas);
+        //for(Tarefa tarefa : listaDeTarefas)
+            System.out.println(listaDeTarefas);
     }
 }
