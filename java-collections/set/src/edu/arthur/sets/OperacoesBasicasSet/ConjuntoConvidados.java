@@ -24,6 +24,7 @@ public class ConjuntoConvidados {
             if(c.getCodigoConvite() == codigoConvite)
                 convidadoParaRemover = c;
         }
+       
         convidados.remove(convidadoParaRemover);
     }
 
