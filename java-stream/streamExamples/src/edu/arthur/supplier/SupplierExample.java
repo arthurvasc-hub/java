@@ -1,5 +1,4 @@
 package edu.arthur.supplier;
-import java.util.function.Supplier;
 import java.util.*;
 import java.util.stream.*;
 
