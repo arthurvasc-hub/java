@@ -10,9 +10,6 @@ public class ConsumerExample {
         numeros.stream().forEach(n -> {
             if(n % 2 == 0){
                 System.out.println(n);
-            }
-          });
-       
-          
+            }});
     }
 }
