@@ -28,7 +28,7 @@ public class VerificacaoServicoCompleto {
         if (movelContratado == true & bandaLargaContratada == true & tvContratada == true) {
             return "Combo Completo";
         } else {
-            return "Combo Incompleto";
+           return "Combo Incompleto";
         }
     }
 

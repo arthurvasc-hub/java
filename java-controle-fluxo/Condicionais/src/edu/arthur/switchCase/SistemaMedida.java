@@ -11,7 +11,6 @@ public class SistemaMedida {
             System.out.println("Whats e Instagram GRATIS +");
             case "P":
             System.out.println("100 minutos de ligação");
-                
         }
     }
 }
