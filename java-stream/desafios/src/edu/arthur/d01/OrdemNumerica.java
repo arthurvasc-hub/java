@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // Desafio 1 - Mostre a lista na ordem numérica:
+//Crie um programa que utilize a Stream API para ordenar a lista de números em ordem crescente e a exiba no console.
 
 public class OrdemNumerica {
 public static void main(String[] args) {
@@ -13,11 +14,4 @@ public static void main(String[] args) {
     .distinct()                                //Remove números duplicados
     .sorted()                                  //Ordena os números
     .forEach(System.out::println);
-    
-
-
-
-
-
-
 }};
