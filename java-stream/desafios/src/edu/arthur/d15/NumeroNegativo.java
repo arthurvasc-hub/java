@@ -3,8 +3,6 @@ package edu.arthur.d15;
 import java.util.Arrays;
 import java.util.List;
 
-import static java.lang.System.*;
-
 //Desafio 15 - Verifique se a lista contém pelo menos um número negativo:
 //Utilizando a Stream API, verifique se a lista contém pelo menos um número negativo e exiba o resultado no console.
 public class NumeroNegativo {
