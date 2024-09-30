@@ -4,8 +4,9 @@ import java.util.List;
 
 
 public class Banco {
-    final String NOME_BANCO = "Banco INTER";
+    private final String NOME_BANCO = "Banco INTER";
     private List<Conta> contas;
+
 
     public Banco() {
         this.contas = new ArrayList<Conta>();
@@ -22,6 +23,7 @@ public class Banco {
         } else {
             contas.stream()
                     .forEach(conta -> {
+                        System.out.println(NOME_BANCO);
                         conta.imprimirInfosComuns();
                         System.out.println("-------------");
                     });
