@@ -2,19 +2,21 @@ package edu.arthur;
 
 public class Main {
     public static void main(String[] args) {
+        Banco banco = new Banco();
         Cliente arthur = new Cliente();
         arthur.setNome("Arthur");
+        Conta ccArthur = new ContaCorrente(arthur);
 
-        Conta cc = new ContaCorrente(arthur);
-        Conta poupanca = new ContaPoupanca(arthur);
+        Cliente milene = new Cliente();
+        milene.setNome("Milene");
+        Conta poupancaMilene = new ContaCorrente(milene);
 
-        cc.depositar(100);
-        poupanca.depositar(200);
+        banco.adicionarConta(ccArthur);
+        banco.adicionarConta(poupancaMilene);
 
-        cc.transferir(100, poupanca);
+        banco.listarContas();
 
-        cc.imprimirExtrato();
-        poupanca.imprimirExtrato();
+
 
     }
 }
